@@ -3,15 +3,13 @@
 #include <time.h>
 
 /**
- * main - main function to generate a random number
- *
- * Return: Always 0 (Success)
- *
+ * main - Entry
+ * Return: Always 0
  */
 int main(void)
 {
 	int n;
-	int num;
+	int a;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
