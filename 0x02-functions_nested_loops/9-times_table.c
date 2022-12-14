@@ -9,22 +9,22 @@ void times_table(void)
 
 	for (num = 0; num <= 9; num++)
 	{
-		_putchar (0);
+		putchar(0);
 
-		for (muult = 1; mult <= 9; mult++)
+		for (mult = 1; mult <= 9; mult++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			putchar(',');
+			putchar(' ');
 
 			prod = num * mult;
 
 			if (prod <= 9)
-				_putchar(' ');
+				putchar(' ');
 			else
-				_putchar((prod / 10) + '0');
+				putchar((prod / 10) + '0');
 
-		       _putchar((prod % 10) + '0');
-	       }
-	       _putchar('\n');
+			putchar((prod % 10) + '0');
+		}
+		putchar('\n');
 	}
 }
