@@ -4,6 +4,7 @@
  * print_remaining_days - picks a date
  * and prints how many is left
  * @month: month in number format
+ * @day: day of month
  * @year: year
  * Return: void
  */
