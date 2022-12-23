@@ -5,7 +5,6 @@
  * null byte, to the end of the string pointed to by @dest.
  * @dest: A pointer to thr string to be concatenated upon
  * @src: the source string to be appended to @dest
-
  * Return: A pointer to the destination string @dest.
  */
 char *strcat(char *dest, const char *src)
