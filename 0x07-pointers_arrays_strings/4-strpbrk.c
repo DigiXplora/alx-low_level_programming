@@ -3,7 +3,7 @@
 /**
  * _strpbrk - prints the consecutive characters of s1 thatare in s2
  * @s: source string
- * @accept: search string
+ * @accept: searching string
  *
  * Return: new string.
  */
