@@ -23,8 +23,9 @@ char *_strdup(char *str)
 
 	if (aaa == NULL)
 		return (NULL);
-	for (int j = 0; j <= i; j++)
-		aaa[j] = str[j];
+
+	for (r = 0; str[r]; r++)
+		aaa[r] = str[r];
 
 	return (aaa);
 }
