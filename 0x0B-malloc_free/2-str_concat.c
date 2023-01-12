@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 #include <stdlib.h>
 /**
  * str_concat - get ends of input and add together for size
@@ -30,9 +30,14 @@ char *str_concat(char *s1, char *s2)
 	while (s1[i] != '\0')
 	{
 		conct[i] = s1[i];
+		i++,
+	}
+	while (s2[ci] != '\0')
+	{
+		conct[i] = s2[ci];
 		i++, ci++;
 	}
-	conct[i] = '\0';
 
+	conct[i] = '\0';
 	return (conct);
 }
