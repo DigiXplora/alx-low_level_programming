@@ -1,28 +1,16 @@
 #include "main.h"
 
 /**
- * flip_bits - counts the number of bits to change
- * to get from one number to another
- * @n: first number
- * @m: second number
- * Return: number of bits to change
+ * get_endianness - checks if a machine is little or big endian
+ * Return: 0 for big, 1 for little
  */
 
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+int get_endianness(void)
 
 {
-	int i, count = 0;
+	unsigned int i = 1;
 
-	unsigned long int current;
+	char *c = (char *) &i;
 
-	unsigned long int exclusive = n ^ m;
-
-	for (i = 63; i >= 0; i--)
-	{
-		current = exclusive >> i;
-		if (current & 1)
-			count++;
-	}
-
-	return (count);
+	return (*c);
 }
